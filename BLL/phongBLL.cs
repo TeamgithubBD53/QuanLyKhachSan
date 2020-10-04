@@ -11,6 +11,11 @@ namespace BLL
 {
    public class phongBLL
     {
+        phongDAL Stclr = new phongDAL();
+        public DataTable hienthithongtinphong()
+        {
+            return Stclr.hienthithongtinphong();
+        }
 
     }
 }
