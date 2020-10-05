@@ -395,7 +395,6 @@
             this.TPTinhTien.TabIndex = 4;
             this.TPTinhTien.Text = "Tính Tiền";
             this.TPTinhTien.UseVisualStyleBackColor = true;
-
             // 
             // tpThuePhong
             // 
@@ -420,7 +419,6 @@
             this.bHuyBo.TabIndex = 24;
             this.bHuyBo.Text = "Hủy bỏ";
             this.bHuyBo.UseVisualStyleBackColor = true;
-
             // 
             // btThuePhongOK
             // 
@@ -431,7 +429,6 @@
             this.btThuePhongOK.TabIndex = 23;
             this.btThuePhongOK.Text = "OK";
             this.btThuePhongOK.UseVisualStyleBackColor = true;
-
             // 
             // groupBox5
             // 
@@ -452,7 +449,6 @@
             this.groupBox5.Size = new System.Drawing.Size(1252, 537);
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
-
             // 
             // dgkhachhang
             // 
@@ -474,7 +470,6 @@
             this.dgkhachhang.RowHeadersWidth = 51;
             this.dgkhachhang.Size = new System.Drawing.Size(1220, 210);
             this.dgkhachhang.TabIndex = 31;
-
             // 
             // maKhachHang
             // 
@@ -647,7 +642,6 @@
             this.checkBDatPhongTruoc.TabIndex = 27;
             this.checkBDatPhongTruoc.Text = "Đặt phòng trước :";
             this.checkBDatPhongTruoc.UseVisualStyleBackColor = true;
-
             // 
             // txtPhongtp
             // 
@@ -768,7 +762,6 @@
             this.btndangxuat.TabIndex = 2;
             this.btndangxuat.Text = "Đăng xuất";
             this.btndangxuat.UseVisualStyleBackColor = false;
-
             // 
             // label2
             // 
@@ -794,7 +787,6 @@
             this.Tabphong.SelectedIndex = 0;
             this.Tabphong.Size = new System.Drawing.Size(1347, 735);
             this.Tabphong.TabIndex = 0;
-
             // 
             // frmmain
             // 
@@ -806,7 +798,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmmain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-
             this.tpTraPhong.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgtraphong)).EndInit();
