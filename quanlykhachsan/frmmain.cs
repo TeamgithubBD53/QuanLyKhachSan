@@ -18,6 +18,11 @@ namespace quanlykhachsan
         {
             InitializeComponent();
         }
+        private void hienthikhachhang()
+        {
+            khachhangBLL pbll = new khachhangBLL();
+            dgkhachhang.DataSource = pbll.hienthikhachhang();
+        }
 
         private void btThuePhongOK_Click(object sender, EventArgs e)
         {
