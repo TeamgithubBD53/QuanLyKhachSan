@@ -419,6 +419,7 @@
             this.bHuyBo.TabIndex = 24;
             this.bHuyBo.Text = "Hủy bỏ";
             this.bHuyBo.UseVisualStyleBackColor = true;
+            this.bHuyBo.Click += new System.EventHandler(this.bHuyBo_Click);
             // 
             // btThuePhongOK
             // 
@@ -429,6 +430,7 @@
             this.btThuePhongOK.TabIndex = 23;
             this.btThuePhongOK.Text = "OK";
             this.btThuePhongOK.UseVisualStyleBackColor = true;
+            this.btThuePhongOK.Click += new System.EventHandler(this.btThuePhongOK_Click);
             // 
             // groupBox5
             // 
@@ -470,6 +472,7 @@
             this.dgkhachhang.RowHeadersWidth = 51;
             this.dgkhachhang.Size = new System.Drawing.Size(1220, 210);
             this.dgkhachhang.TabIndex = 31;
+            this.dgkhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgkhachhang_CellClick);
             // 
             // maKhachHang
             // 

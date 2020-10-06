@@ -18,7 +18,26 @@ namespace quanlykhachsan
         {
             InitializeComponent();
         }
-       
-       
+
+        private void btThuePhongOK_Click(object sender, EventArgs e)
+        {
+            thuephongBLL tpBLL = new thuephongBLL();
+            tpBLL.them_thuephong(int.Parse(txtmakhtp.Text.Trim()), dtTuNgaytp.Value, int.Parse(txtPhongtp.Text.Trim()));
+            MessageBox.Show("thuê phòng thàng công", "Thông báo");
+        }
+
+        private void bHuyBo_Click(object sender, EventArgs e)
+        {
+            txtPhongtp.Clear();
+            txtphongdt.Clear();
+            txtmakhtp.Clear();
+        }
+
+        private void dgkhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = new DataGridViewRow();
+            row = dgkhachhang.Rows[e.RowIndex];
+            txtmakhtp.Text = row.Cells["maKhachHang"].Value.ToString();
+        }
     }
 }
