@@ -52,7 +52,7 @@
             this.btnthoat.TabIndex = 32;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
-
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // btndangnhap
             // 
@@ -64,7 +64,7 @@
             this.btndangnhap.TabIndex = 31;
             this.btndangnhap.Text = "Đăng nhập";
             this.btndangnhap.UseVisualStyleBackColor = true;
-
+            this.btndangnhap.Click += new System.EventHandler(this.btndangnhap_Click);
             // 
             // txtmatkhau
             // 
@@ -141,7 +141,7 @@
             this.cbkhach.TabIndex = 35;
             this.cbkhach.Text = "Chế độ khách";
             this.cbkhach.UseVisualStyleBackColor = true;
-
+            this.cbkhach.CheckedChanged += new System.EventHandler(this.cbkhach_CheckedChanged);
             // 
             // pictureBox1
             // 
