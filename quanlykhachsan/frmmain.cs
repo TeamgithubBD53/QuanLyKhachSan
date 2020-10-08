@@ -18,20 +18,7 @@ namespace quanlykhachsan
         {
             InitializeComponent();
         }
-        private void hienthikhachhang()
-        {
-            //BLL
-        }
-        private void hienthiphong()
-        {
-            //BLL
-        }
-        private void frmmain_Load(object sender, EventArgs e)
-        {
-            hienthiphong();
-            hienthikhachhang();
-            dtTuNgaytp.Value = DateTime.Now;
-        }
+
         private void btndangxuat_Click(object sender, EventArgs e)
         {
             frmmainquanlykhachsan.ActiveForm.Close();
@@ -40,4 +27,3 @@ namespace quanlykhachsan
         }
     }
 }
-

@@ -799,7 +799,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmmain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmmain_Load);
             this.tpTraPhong.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgtraphong)).EndInit();
