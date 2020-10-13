@@ -34,12 +34,7 @@ namespace quanlykhachsan
             cbquoctich.Enabled = t;
             cbgiotinhkh.Enabled = t;
         }
-        private void frm_load(object sender, EventArgs e)
-        {
-            hienthi();
-            trangthai(false);
-        }
-        
+
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -104,6 +99,12 @@ namespace quanlykhachsan
         private void btnthoat_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void frmkhachhang_Load(object sender, EventArgs e)
+        {
+            hienthi();
+            trangthai(false);
         }
     }
 }

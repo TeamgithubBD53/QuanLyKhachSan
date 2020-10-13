@@ -427,6 +427,7 @@
             this.Name = "frmkhachhang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý khách hàng";
+            this.Load += new System.EventHandler(this.frmkhachhang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

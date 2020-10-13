@@ -29,11 +29,7 @@ namespace quanlykhachsan
             cbloaiphong.Enabled = t;
             cbtinhtrang.Enabled = t;
         }
-        private void frm_load(object sender, EventArgs e)
-        {
-            hienthi();
-            trangthai(false);
-        }
+
 
         private void GridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -51,6 +47,10 @@ namespace quanlykhachsan
             trangthai(true);
         }
 
-  
+        private void frmthongtinphong_Load(object sender, EventArgs e)
+        {
+            hienthi();
+            trangthai(false);
+        }
     }
 }
