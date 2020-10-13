@@ -24,6 +24,7 @@ namespace quanlykhachsan
             dgkhachhang.DataSource = pbll.hienthikhachhang();
         }
 
+
         private void btThuePhongOK_Click(object sender, EventArgs e)
         {
             thuephongBLL tpBLL = new thuephongBLL();
