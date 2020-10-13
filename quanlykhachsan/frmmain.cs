@@ -46,7 +46,7 @@ namespace quanlykhachsan
         {
             hienthiphong();
             hienthikhachhang();
-
+        }
 
 
         private void btThuePhongOK_Click(object sender, EventArgs e)
