@@ -17,6 +17,12 @@ namespace quanlykhachsan
         {
             InitializeComponent();
         }
-       
+
+        private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmmain frm = new frmmain();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

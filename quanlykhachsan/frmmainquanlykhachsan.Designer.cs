@@ -57,7 +57,7 @@
             this.trangChủToolStripMenuItem.Name = "trangChủToolStripMenuItem";
             this.trangChủToolStripMenuItem.Size = new System.Drawing.Size(100, 27);
             this.trangChủToolStripMenuItem.Text = "Trang chủ";
-
+            this.trangChủToolStripMenuItem.Click += new System.EventHandler(this.trangChủToolStripMenuItem_Click);
             // 
             // quảnLýPhòngToolStripMenuItem
             // 
@@ -65,7 +65,6 @@
             this.quảnLýPhòngToolStripMenuItem.Name = "quảnLýPhòngToolStripMenuItem";
             this.quảnLýPhòngToolStripMenuItem.Size = new System.Drawing.Size(120, 27);
             this.quảnLýPhòngToolStripMenuItem.Text = "Quản lý phòng";
-
             // 
             // quảnLýThôngTinKháchHàngToolStripMenuItem
             // 
@@ -73,14 +72,13 @@
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Name = "quảnLýThôngTinKháchHàngToolStripMenuItem";
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(126, 27);
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Text = "QL  khách hàng";
-            
+            // 
             // quảnLýNhânViênToolStripMenuItem
             // 
             this.quảnLýNhânViênToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
             this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(142, 27);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý nhân viên";
-
             // 
             // frmmainquanlykhachsan
             // 
@@ -96,7 +94,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Quản Lý Khách Sạn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
