@@ -66,7 +66,7 @@
             // 
             this.txtphong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtphong.Location = new System.Drawing.Point(251, 335);
-            this.txtphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtphong.Margin = new System.Windows.Forms.Padding(4);
             this.txtphong.Name = "txtphong";
             this.txtphong.Size = new System.Drawing.Size(211, 30);
             this.txtphong.TabIndex = 39;
@@ -111,7 +111,7 @@
             // 
             this.txtdongiaphong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtdongiaphong.Location = new System.Drawing.Point(784, 411);
-            this.txtdongiaphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdongiaphong.Margin = new System.Windows.Forms.Padding(4);
             this.txtdongiaphong.Name = "txtdongiaphong";
             this.txtdongiaphong.Size = new System.Drawing.Size(211, 30);
             this.txtdongiaphong.TabIndex = 45;
@@ -136,7 +136,7 @@
             "Rỗi",
             "Bận"});
             this.cbtinhtrang.Location = new System.Drawing.Point(784, 337);
-            this.cbtinhtrang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbtinhtrang.Margin = new System.Windows.Forms.Padding(4);
             this.cbtinhtrang.Name = "cbtinhtrang";
             this.cbtinhtrang.Size = new System.Drawing.Size(211, 30);
             this.cbtinhtrang.TabIndex = 46;
@@ -145,19 +145,19 @@
             // 
             this.btnthemphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnthemphong.Location = new System.Drawing.Point(165, 490);
-            this.btnthemphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthemphong.Margin = new System.Windows.Forms.Padding(4);
             this.btnthemphong.Name = "btnthemphong";
             this.btnthemphong.Size = new System.Drawing.Size(97, 38);
             this.btnthemphong.TabIndex = 47;
             this.btnthemphong.Text = "Thêm";
             this.btnthemphong.UseVisualStyleBackColor = true;
-  
+            this.btnthemphong.Click += new System.EventHandler(this.btnthemphong_Click);
             // 
             // btnsuaphong
             // 
             this.btnsuaphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnsuaphong.Location = new System.Drawing.Point(335, 490);
-            this.btnsuaphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsuaphong.Margin = new System.Windows.Forms.Padding(4);
             this.btnsuaphong.Name = "btnsuaphong";
             this.btnsuaphong.Size = new System.Drawing.Size(97, 38);
             this.btnsuaphong.TabIndex = 48;
@@ -168,7 +168,7 @@
             // 
             this.btnxoaphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnxoaphong.Location = new System.Drawing.Point(497, 490);
-            this.btnxoaphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxoaphong.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoaphong.Name = "btnxoaphong";
             this.btnxoaphong.Size = new System.Drawing.Size(97, 38);
             this.btnxoaphong.TabIndex = 49;
@@ -179,7 +179,7 @@
             // 
             this.btnluuphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnluuphong.Location = new System.Drawing.Point(680, 490);
-            this.btnluuphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnluuphong.Margin = new System.Windows.Forms.Padding(4);
             this.btnluuphong.Name = "btnluuphong";
             this.btnluuphong.Size = new System.Drawing.Size(97, 38);
             this.btnluuphong.TabIndex = 50;
@@ -190,7 +190,7 @@
             // 
             this.btnthoatphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnthoatphong.Location = new System.Drawing.Point(856, 490);
-            this.btnthoatphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthoatphong.Margin = new System.Windows.Forms.Padding(4);
             this.btnthoatphong.Name = "btnthoatphong";
             this.btnthoatphong.Size = new System.Drawing.Size(97, 38);
             this.btnthoatphong.TabIndex = 51;
@@ -206,7 +206,7 @@
             "Trung",
             "Vip"});
             this.cbloaiphong.Location = new System.Drawing.Point(251, 410);
-            this.cbloaiphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbloaiphong.Margin = new System.Windows.Forms.Padding(4);
             this.cbloaiphong.Name = "cbloaiphong";
             this.cbloaiphong.Size = new System.Drawing.Size(211, 30);
             this.cbloaiphong.TabIndex = 52;
@@ -221,13 +221,13 @@
             this.tinhTrang,
             this.donGia});
             this.GridView.Location = new System.Drawing.Point(44, 74);
-            this.GridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GridView.Margin = new System.Windows.Forms.Padding(4);
             this.GridView.Name = "GridView";
             this.GridView.ReadOnly = true;
             this.GridView.RowHeadersWidth = 51;
             this.GridView.Size = new System.Drawing.Size(1029, 218);
             this.GridView.TabIndex = 53;
-
+            this.GridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_CellClick);
             // 
             // maPhong
             // 
@@ -281,11 +281,10 @@
             this.Controls.Add(this.txtphong);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmthongtinphong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmthongtinphong";
-
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -78,7 +78,7 @@
             // 
             this.txtsdt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtsdt.Location = new System.Drawing.Point(761, 431);
-            this.txtsdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtsdt.Margin = new System.Windows.Forms.Padding(4);
             this.txtsdt.Name = "txtsdt";
             this.txtsdt.Size = new System.Drawing.Size(211, 30);
             this.txtsdt.TabIndex = 41;
@@ -87,7 +87,7 @@
             // 
             this.txtdiachi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtdiachi.Location = new System.Drawing.Point(761, 385);
-            this.txtdiachi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdiachi.Margin = new System.Windows.Forms.Padding(4);
             this.txtdiachi.Name = "txtdiachi";
             this.txtdiachi.Size = new System.Drawing.Size(211, 30);
             this.txtdiachi.TabIndex = 40;
@@ -96,7 +96,7 @@
             // 
             this.txtscm.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtscm.Location = new System.Drawing.Point(761, 326);
-            this.txtscm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtscm.Margin = new System.Windows.Forms.Padding(4);
             this.txtscm.Name = "txtscm";
             this.txtscm.Size = new System.Drawing.Size(211, 30);
             this.txtscm.TabIndex = 39;
@@ -105,7 +105,7 @@
             // 
             this.txttennv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txttennv.Location = new System.Drawing.Point(296, 385);
-            this.txttennv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttennv.Margin = new System.Windows.Forms.Padding(4);
             this.txttennv.Name = "txttennv";
             this.txttennv.Size = new System.Drawing.Size(211, 30);
             this.txttennv.TabIndex = 38;
@@ -115,7 +115,7 @@
             this.txtmanv.Enabled = false;
             this.txtmanv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtmanv.Location = new System.Drawing.Point(296, 326);
-            this.txtmanv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmanv.Margin = new System.Windows.Forms.Padding(4);
             this.txtmanv.Name = "txtmanv";
             this.txtmanv.Size = new System.Drawing.Size(211, 30);
             this.txtmanv.TabIndex = 37;
@@ -123,46 +123,46 @@
             // btnthoat
             // 
             this.btnthoat.Location = new System.Drawing.Point(869, 545);
-            this.btnthoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(104, 46);
             this.btnthoat.TabIndex = 35;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
-
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // btnluu
             // 
             this.btnluu.Location = new System.Drawing.Point(543, 545);
-            this.btnluu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnluu.Margin = new System.Windows.Forms.Padding(4);
             this.btnluu.Name = "btnluu";
             this.btnluu.Size = new System.Drawing.Size(104, 46);
             this.btnluu.TabIndex = 34;
             this.btnluu.Text = "&Lưu";
             this.btnluu.UseVisualStyleBackColor = true;
-
+            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
             // 
             // btnxoa
             // 
             this.btnxoa.Location = new System.Drawing.Point(381, 545);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(104, 46);
             this.btnxoa.TabIndex = 33;
             this.btnxoa.Text = "&Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
-
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnsua
             // 
             this.btnsua.Location = new System.Drawing.Point(232, 545);
-            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(104, 46);
             this.btnsua.TabIndex = 32;
             this.btnsua.Text = "&Sửa";
             this.btnsua.UseVisualStyleBackColor = true;
-
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // label7
             // 
@@ -243,13 +243,13 @@
             this.soDienThoai,
             this.ngayVaoLam});
             this.dataGridView1.Location = new System.Drawing.Point(41, 80);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1053, 215);
             this.dataGridView1.TabIndex = 24;
-
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // maNhanVien
             // 
@@ -349,13 +349,13 @@
             // btnthem
             // 
             this.btnthem.Location = new System.Drawing.Point(92, 545);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(104, 46);
             this.btnthem.TabIndex = 49;
             this.btnthem.Text = "&Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
-
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // cbgioitinh
             // 
@@ -364,7 +364,7 @@
             "Nam",
             "Nữ"});
             this.cbgioitinh.Location = new System.Drawing.Point(296, 436);
-            this.cbgioitinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbgioitinh.Margin = new System.Windows.Forms.Padding(4);
             this.cbgioitinh.Name = "cbgioitinh";
             this.cbgioitinh.Size = new System.Drawing.Size(211, 24);
             this.cbgioitinh.TabIndex = 50;
@@ -375,7 +375,7 @@
             this.dtngaysinh.CustomFormat = "dd/MM/yyyy";
             this.dtngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtngaysinh.Location = new System.Drawing.Point(296, 480);
-            this.dtngaysinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtngaysinh.Margin = new System.Windows.Forms.Padding(4);
             this.dtngaysinh.Name = "dtngaysinh";
             this.dtngaysinh.Size = new System.Drawing.Size(211, 22);
             this.dtngaysinh.TabIndex = 51;
@@ -387,7 +387,7 @@
             this.dtngayvaolam.CustomFormat = "dd/MM/yyyy";
             this.dtngayvaolam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtngayvaolam.Location = new System.Drawing.Point(761, 480);
-            this.dtngayvaolam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtngayvaolam.Margin = new System.Windows.Forms.Padding(4);
             this.dtngayvaolam.Name = "dtngayvaolam";
             this.dtngayvaolam.Size = new System.Drawing.Size(211, 22);
             this.dtngayvaolam.TabIndex = 52;
@@ -396,13 +396,13 @@
             // btnhuy
             // 
             this.btnhuy.Location = new System.Drawing.Point(709, 545);
-            this.btnhuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnhuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnhuy.Name = "btnhuy";
             this.btnhuy.Size = new System.Drawing.Size(104, 46);
             this.btnhuy.TabIndex = 53;
             this.btnhuy.Text = "&Hủy";
             this.btnhuy.UseVisualStyleBackColor = true;
-      
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // frmnhanvien
             // 
@@ -433,10 +433,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label5);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmnhanvien";
             this.Text = "nhanvien";
-
+            this.Load += new System.EventHandler(this.frm_load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

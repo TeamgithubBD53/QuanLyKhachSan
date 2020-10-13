@@ -17,6 +17,7 @@ namespace quanlykhachsan
         {
             InitializeComponent();
         }
+
         private void frmmainquanlykhachsan_Load(object sender, EventArgs e)
         {
             frmmain frm = new frmmain();
@@ -24,12 +25,14 @@ namespace quanlykhachsan
             frm.Show();
         }
         //điều hướng trên form quản lý
+
         private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmmain frm = new frmmain();
             frm.MdiParent = this;
             frm.Show();
         }
+
 
         private void quảnLýPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -51,6 +54,7 @@ namespace quanlykhachsan
             frm.MdiParent = this;
             frm.Show();
         }
+
 
 
     }

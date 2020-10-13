@@ -419,6 +419,10 @@
             this.bHuyBo.TabIndex = 24;
             this.bHuyBo.Text = "Hủy bỏ";
             this.bHuyBo.UseVisualStyleBackColor = true;
+
+
+            this.bHuyBo.Click += new System.EventHandler(this.bHuyBo_Click);
+
             // 
             // btThuePhongOK
             // 
@@ -429,6 +433,9 @@
             this.btThuePhongOK.TabIndex = 23;
             this.btThuePhongOK.Text = "OK";
             this.btThuePhongOK.UseVisualStyleBackColor = true;
+
+            this.btThuePhongOK.Click += new System.EventHandler(this.btThuePhongOK_Click);
+
             // 
             // groupBox5
             // 
@@ -470,6 +477,9 @@
             this.dgkhachhang.RowHeadersWidth = 51;
             this.dgkhachhang.Size = new System.Drawing.Size(1220, 210);
             this.dgkhachhang.TabIndex = 31;
+
+            this.dgkhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgkhachhang_CellClick);
+
             // 
             // maKhachHang
             // 
@@ -762,7 +772,9 @@
             this.btndangxuat.TabIndex = 2;
             this.btndangxuat.Text = "Đăng xuất";
             this.btndangxuat.UseVisualStyleBackColor = false;
+
             this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
+
             // 
             // label2
             // 
@@ -788,7 +800,9 @@
             this.Tabphong.SelectedIndex = 0;
             this.Tabphong.Size = new System.Drawing.Size(1347, 735);
             this.Tabphong.TabIndex = 0;
+
             this.Tabphong.Click += new System.EventHandler(this.Tabphong_Click);
+
             // 
             // frmmain
             // 
@@ -800,7 +814,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmmain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+
             this.Load += new System.EventHandler(this.frmmain_Load);
+
             this.tpTraPhong.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgtraphong)).EndInit();

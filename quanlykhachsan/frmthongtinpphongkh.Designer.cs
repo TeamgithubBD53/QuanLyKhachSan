@@ -110,7 +110,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Đăng xuất";
             this.button1.UseVisualStyleBackColor = true;
-
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // thoat
             // 
@@ -122,6 +122,7 @@
             this.thoat.TabIndex = 18;
             this.thoat.Text = "Thoát";
             this.thoat.UseVisualStyleBackColor = true;
+            this.thoat.Click += new System.EventHandler(this.thoat_Click);
             // 
             // frmthongtinpphongkh
             // 
@@ -136,6 +137,7 @@
             this.Name = "frmthongtinpphongkh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmthongtinpphongkh";
+            this.Load += new System.EventHandler(this.frm_load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
