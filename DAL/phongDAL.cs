@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+
 //author: KimKhanh
 namespace DAL
 {
@@ -25,6 +26,51 @@ namespace DAL
             cnn.Close();
             return dt;
         }
+        public bool them_phong(int maPhong, bool tinhTrang, string loaiPhong, int donGia)
+        {
+            SqlConnection cnn = ketnoi.Get();
+            SqlCommand cmd = new SqlCommand("them_phong", cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("maPhong", maPhong);
+            cmd.Parameters.AddWithValue("tinhTrang", tinhTrang);
+            cmd.Parameters.AddWithValue("loaiPhong", loaiPhong);
+            cmd.Parameters.AddWithValue("donGia", donGia);
+            int i = cmd.ExecuteNonQuery();
+            cnn.Close();
+            if (i != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
+        }
+       
+        public void xoa_phong(int maPhong)
+        {
+            SqlConnection cnn = ketnoi.Get();
+            SqlCommand cmd = new SqlCommand("xoa_phong", cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("maPhong", maPhong);
+            int i = cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+     
+        public void sua_phong(int maPhong, bool tinhTrang, string loaiPhong, int donGia)
+        {
+            SqlConnection cnn = ketnoi.Get();
+            SqlCommand cmd = new SqlCommand("sua_nhanvien", cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("maPhong", maPhong);
+            cmd.Parameters.AddWithValue("tinhTrang", tinhTrang);
+            cmd.Parameters.AddWithValue("loaiPhong", loaiPhong);
+            cmd.Parameters.AddWithValue("donGia", donGia);
+            int i = cmd.ExecuteNonQuery();
+            cnn.Close();
+           
+        }
+     
     }
 }

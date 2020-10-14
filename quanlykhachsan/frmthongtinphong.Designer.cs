@@ -163,6 +163,7 @@
             this.btnsuaphong.TabIndex = 48;
             this.btnsuaphong.Text = "Sửa";
             this.btnsuaphong.UseVisualStyleBackColor = true;
+            this.btnsuaphong.Click += new System.EventHandler(this.btnsuaphong_Click);
             // 
             // btnxoaphong
             // 
@@ -174,6 +175,7 @@
             this.btnxoaphong.TabIndex = 49;
             this.btnxoaphong.Text = "Xóa";
             this.btnxoaphong.UseVisualStyleBackColor = true;
+            this.btnxoaphong.Click += new System.EventHandler(this.btnxoaphong_Click);
             // 
             // btnluuphong
             // 
@@ -185,6 +187,7 @@
             this.btnluuphong.TabIndex = 50;
             this.btnluuphong.Text = "Lưu";
             this.btnluuphong.UseVisualStyleBackColor = true;
+            this.btnluuphong.Click += new System.EventHandler(this.btnluuphong_Click);
             // 
             // btnthoatphong
             // 
@@ -196,6 +199,7 @@
             this.btnthoatphong.TabIndex = 51;
             this.btnthoatphong.Text = "Thoát";
             this.btnthoatphong.UseVisualStyleBackColor = true;
+            this.btnthoatphong.Click += new System.EventHandler(this.btnthoatphong_Click);
             // 
             // cbloaiphong
             // 

@@ -16,6 +16,20 @@ namespace BLL
         {
             return Stclr.hienthithongtinphong();
         }
+         public bool them_phong(int maPhong, bool tinhTrang, string loaiPhong, int donGia)
+        {
+            return Stclr.them_phong(maPhong,tinhTrang, loaiPhong, donGia);
+        }
+        public void xoa_phong(int maPhong)
+        {
+            Stclr.xoa_phong(maPhong);
 
+        }
+
+        public void sua_phong(int maPhong, bool tinhTrang, string loaiPhong, int donGia)
+        {
+
+            Stclr.sua_phong(maPhong,tinhTrang,loaiPhong,donGia);
+        }
     }
 }
