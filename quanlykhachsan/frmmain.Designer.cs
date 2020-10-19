@@ -395,6 +395,7 @@
             this.TPTinhTien.TabIndex = 4;
             this.TPTinhTien.Text = "Tính Tiền";
             this.TPTinhTien.UseVisualStyleBackColor = true;
+            this.TPTinhTien.Click += new System.EventHandler(this.TPTinhTien_Click);
             // 
             // tpThuePhong
             // 
@@ -765,6 +766,7 @@
             this.btndangxuat.TabIndex = 2;
             this.btndangxuat.Text = "Đăng xuất";
             this.btndangxuat.UseVisualStyleBackColor = false;
+            this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
             // 
             // label2
             // 
@@ -801,6 +803,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmmain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmmain_Load);
             this.tpTraPhong.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgtraphong)).EndInit();
