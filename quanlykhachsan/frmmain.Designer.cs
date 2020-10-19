@@ -199,9 +199,11 @@
             this.dtngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtngaysinh.Location = new System.Drawing.Point(220, 138);
             this.dtngaysinh.Margin = new System.Windows.Forms.Padding(4);
+            this.dtngaysinh.MaxDate = new System.DateTime(2100, 12, 31, 0, 0, 0, 0);
             this.dtngaysinh.Name = "dtngaysinh";
             this.dtngaysinh.Size = new System.Drawing.Size(251, 26);
             this.dtngaysinh.TabIndex = 48;
+            this.dtngaysinh.Value = new System.DateTime(2000, 10, 20, 20, 29, 0, 0);
             // 
             // txttongtien
             // 
@@ -606,7 +608,7 @@
             this.dtngaydattruoc.Name = "dtngaydattruoc";
             this.dtngaydattruoc.Size = new System.Drawing.Size(251, 26);
             this.dtngaydattruoc.TabIndex = 28;
-            this.dtngaydattruoc.Value = new System.DateTime(2008, 12, 13, 0, 53, 0, 0);
+            this.dtngaydattruoc.Value = new System.DateTime(2020, 10, 10, 0, 53, 0, 0);
             // 
             // label3
             // 
@@ -667,7 +669,7 @@
             this.dtTuNgaytp.Name = "dtTuNgaytp";
             this.dtTuNgaytp.Size = new System.Drawing.Size(251, 26);
             this.dtTuNgaytp.TabIndex = 18;
-            this.dtTuNgaytp.Value = new System.DateTime(2008, 12, 13, 0, 53, 0, 0);
+            this.dtTuNgaytp.Value = new System.DateTime(2020, 10, 20, 0, 53, 0, 0);
             // 
             // label12
             // 
@@ -801,6 +803,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1379, 751);
             this.Controls.Add(this.Tabphong);
             this.Margin = new System.Windows.Forms.Padding(4);

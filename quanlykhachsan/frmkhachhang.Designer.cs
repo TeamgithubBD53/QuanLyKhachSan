@@ -369,6 +369,7 @@
             this.dtngaysinh.Size = new System.Drawing.Size(211, 22);
             this.dtngaysinh.TabIndex = 25;
             this.dtngaysinh.TabStop = false;
+            this.dtngaysinh.Value = new System.DateTime(2000, 10, 19, 20, 24, 0, 0);
             // 
             // cbquoctich
             // 
@@ -399,6 +400,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1106, 636);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbquoctich);
