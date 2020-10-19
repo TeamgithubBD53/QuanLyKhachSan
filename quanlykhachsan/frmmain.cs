@@ -29,6 +29,7 @@ namespace quanlykhachsan
             phongBLL pbll = new phongBLL();
             dtgvDanhSachphong.DataSource = pbll.hienthithongtinphong();
         }
+<<<<<<< HEAD
         private void frmmain_Load(object sender, EventArgs e)
         {
             hienthiphong();
@@ -48,6 +49,14 @@ namespace quanlykhachsan
             hienthikhachhang();
         }
 
+=======
+
+        private void hienthitraphong()
+        {
+            thuephongBLL tpBLL = new thuephongBLL();
+            dgtraphong.DataSource = tpBLL.hienthi_thuetheophong();
+        }
+>>>>>>> thuy
 
         private void btThuePhongOK_Click(object sender, EventArgs e)
         {
@@ -69,6 +78,49 @@ namespace quanlykhachsan
             row = dgkhachhang.Rows[e.RowIndex];
             txtmakhtp.Text = row.Cells["maKhachHang"].Value.ToString();
 
+        }
+
+        private void trangthai(bool t)
+        {
+            txtPhongtp.Enabled = t;
+            dtTuNgaytp.Enabled = t;
+            txtphongdt.Enabled = !t;
+            dtngaydattruoc.Enabled = !t;
+        }
+
+        private void frmmain_Load(object sender, EventArgs e)
+        {
+            hienthiphong();
+            hienthikhachhang();
+            dtTuNgaytp.Value = DateTime.Now;
+        }
+
+        private void btndangxuat_Click(object sender, EventArgs e)
+        {
+            frmmainquanlykhachsan.ActiveForm.Close();
+            frmdangnhap frm = new frmdangnhap();
+            frm.Show();
+        }
+        private void thanhtoan()
+        {
+            TimeSpan Time = (dttpngayketthucthue.Value - dttpngaybatdauthue.Value);
+            int TongSoNgay = Time.Days + 1;
+            int ngaybatdau = dttpngaybatdauthue.Value.Day;
+            int ngayketthuc = dttpngayketthucthue.Value.Day;
+
+            if (ngaybatdau > ngayketthuc)/// vào từ sáng đén tối vẫn tính là 1 ngày
+                MessageBox.Show("nhập sai ngày!! vui long nhập lại", "Thông báo");
+            else
+                txttongtien.Text = (TongSoNgay * int.Parse(txtdongiatp.Text)).ToString();
+        }
+
+        private void TPTinhTien_Click(object sender, EventArgs e)
+        {
+            thanhtoan();
+            // thuephongBLL tpBLL = new thuephongBLL();
+            //   tpBLL.tinhtien(dttpngayketthucthue.Value, float.Parse(txttongtien.Text.Trim()),int.Parse(txtmathuephong.Text.Trim()),int.Parse(txtTPPhong.Text.Trim()));
+            hienthitraphong();
+            MessageBox.Show("Số tiền phải trả là : " + txttongtien.Text, "Tổng tiền");
         }
     }
 }
