@@ -29,7 +29,11 @@ namespace quanlykhachsan
             phongBLL pbll = new phongBLL();
             dtgvDanhSachphong.DataSource = pbll.hienthithongtinphong();
         }
-<<<<<<< HEAD
+        private void hienthitraphong()
+        {
+            thuephongBLL tpBLL = new thuephongBLL();
+            dgtraphong.DataSource = tpBLL.hienthi_thuetheophong();
+        }
         private void frmmain_Load(object sender, EventArgs e)
         {
             hienthiphong();
@@ -49,14 +53,6 @@ namespace quanlykhachsan
             hienthikhachhang();
         }
 
-=======
-
-        private void hienthitraphong()
-        {
-            thuephongBLL tpBLL = new thuephongBLL();
-            dgtraphong.DataSource = tpBLL.hienthi_thuetheophong();
-        }
->>>>>>> thuy
 
         private void btThuePhongOK_Click(object sender, EventArgs e)
         {
@@ -72,13 +68,6 @@ namespace quanlykhachsan
             txtmakhtp.Clear();
         }
 
-        private void dgkhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridViewRow row = new DataGridViewRow();
-            row = dgkhachhang.Rows[e.RowIndex];
-            txtmakhtp.Text = row.Cells["maKhachHang"].Value.ToString();
-
-        }
 
         private void trangthai(bool t)
         {
@@ -88,19 +77,7 @@ namespace quanlykhachsan
             dtngaydattruoc.Enabled = !t;
         }
 
-        private void frmmain_Load(object sender, EventArgs e)
-        {
-            hienthiphong();
-            hienthikhachhang();
-            dtTuNgaytp.Value = DateTime.Now;
-        }
 
-        private void btndangxuat_Click(object sender, EventArgs e)
-        {
-            frmmainquanlykhachsan.ActiveForm.Close();
-            frmdangnhap frm = new frmdangnhap();
-            frm.Show();
-        }
         private void thanhtoan()
         {
             TimeSpan Time = (dttpngayketthucthue.Value - dttpngaybatdauthue.Value);
@@ -121,6 +98,39 @@ namespace quanlykhachsan
             //   tpBLL.tinhtien(dttpngayketthucthue.Value, float.Parse(txttongtien.Text.Trim()),int.Parse(txtmathuephong.Text.Trim()),int.Parse(txtTPPhong.Text.Trim()));
             hienthitraphong();
             MessageBox.Show("Số tiền phải trả là : " + txttongtien.Text, "Tổng tiền");
+        }
+
+        private void checkBDatPhongTruoc_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBDatPhongTruoc.Checked == true)
+                trangthai(false);
+            else
+                trangthai(true);
+        }
+
+        private void dtgvThucDon_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = new DataGridViewRow();
+            row = dgtraphong.Rows[e.RowIndex];
+            txtTPPhong.Text = row.Cells["maPhong"].Value.ToString();
+            txtTPTenKH.Text = row.Cells["tenKhachHang"].Value.ToString();
+            txtTPSoCMND.Text = row.Cells["chungMinhNhanDan"].Value.ToString();
+            txtTPSoDT.Text = row.Cells["soDienThoai"].Value.ToString();
+            txtTPDiaChi.Text = row.Cells["diaChi"].Value.ToString();
+            txtdongiatp.Text = row.Cells["donGia"].Value.ToString();
+            txtmathuephong.Text = row.Cells["maThuePhong"].Value.ToString();
+            dtngaysinh.Value = Convert.ToDateTime(row.Cells["ngaySinh"].Value.ToString());
+            dttpngaybatdauthue.Value = Convert.ToDateTime(row.Cells["ngayDen"].Value.ToString());
+
+        }
+
+
+        private void dgkhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = new DataGridViewRow();
+            row = dgkhachhang.Rows[e.RowIndex];
+            txtmakhtp.Text = row.Cells["maKhachHang"].Value.ToString();
+
         }
     }
 }

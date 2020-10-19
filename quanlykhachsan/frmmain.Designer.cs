@@ -138,6 +138,7 @@
             this.dgtraphong.RowHeadersWidth = 51;
             this.dgtraphong.Size = new System.Drawing.Size(1261, 246);
             this.dgtraphong.TabIndex = 46;
+            this.dgtraphong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvThucDon_CellClick);
             // 
             // groupBox8
             // 
@@ -420,10 +421,7 @@
             this.bHuyBo.TabIndex = 24;
             this.bHuyBo.Text = "Hủy bỏ";
             this.bHuyBo.UseVisualStyleBackColor = true;
-
-
             this.bHuyBo.Click += new System.EventHandler(this.bHuyBo_Click);
-
             // 
             // btThuePhongOK
             // 
@@ -434,9 +432,7 @@
             this.btThuePhongOK.TabIndex = 23;
             this.btThuePhongOK.Text = "OK";
             this.btThuePhongOK.UseVisualStyleBackColor = true;
-
             this.btThuePhongOK.Click += new System.EventHandler(this.btThuePhongOK_Click);
-
             // 
             // groupBox5
             // 
@@ -478,9 +474,7 @@
             this.dgkhachhang.RowHeadersWidth = 51;
             this.dgkhachhang.Size = new System.Drawing.Size(1220, 210);
             this.dgkhachhang.TabIndex = 31;
-
             this.dgkhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgkhachhang_CellClick);
-
             // 
             // maKhachHang
             // 
@@ -653,6 +647,7 @@
             this.checkBDatPhongTruoc.TabIndex = 27;
             this.checkBDatPhongTruoc.Text = "Đặt phòng trước :";
             this.checkBDatPhongTruoc.UseVisualStyleBackColor = true;
+            this.checkBDatPhongTruoc.CheckedChanged += new System.EventHandler(this.checkBDatPhongTruoc_CheckedChanged);
             // 
             // txtPhongtp
             // 
@@ -773,13 +768,7 @@
             this.btndangxuat.TabIndex = 2;
             this.btndangxuat.Text = "Đăng xuất";
             this.btndangxuat.UseVisualStyleBackColor = false;
-<<<<<<< HEAD
-
             this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
-
-=======
-            this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
->>>>>>> thuy
             // 
             // label2
             // 
@@ -805,9 +794,7 @@
             this.Tabphong.SelectedIndex = 0;
             this.Tabphong.Size = new System.Drawing.Size(1347, 735);
             this.Tabphong.TabIndex = 0;
-
             this.Tabphong.Click += new System.EventHandler(this.Tabphong_Click);
-
             // 
             // frmmain
             // 
@@ -819,13 +806,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmmain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-<<<<<<< HEAD
-
             this.Load += new System.EventHandler(this.frmmain_Load);
-
-=======
-            this.Load += new System.EventHandler(this.frmmain_Load);
->>>>>>> thuy
             this.tpTraPhong.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgtraphong)).EndInit();
