@@ -408,7 +408,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1153, 621);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1169, 621);
             this.Controls.Add(this.btnhuy);
             this.Controls.Add(this.dtngayvaolam);
             this.Controls.Add(this.dtngaysinh);
@@ -434,7 +435,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label5);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmnhanvien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "nhanvien";
             this.Load += new System.EventHandler(this.frm_load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

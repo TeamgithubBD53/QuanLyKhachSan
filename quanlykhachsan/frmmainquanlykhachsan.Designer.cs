@@ -65,9 +65,7 @@
             this.quảnLýPhòngToolStripMenuItem.Name = "quảnLýPhòngToolStripMenuItem";
             this.quảnLýPhòngToolStripMenuItem.Size = new System.Drawing.Size(120, 27);
             this.quảnLýPhòngToolStripMenuItem.Text = "Quản lý phòng";
-
             this.quảnLýPhòngToolStripMenuItem.Click += new System.EventHandler(this.quảnLýPhòngToolStripMenuItem_Click);
-
             // 
             // quảnLýThôngTinKháchHàngToolStripMenuItem
             // 
@@ -75,9 +73,7 @@
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Name = "quảnLýThôngTinKháchHàngToolStripMenuItem";
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(126, 27);
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Text = "QL  khách hàng";
-
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.quảnLýThôngTinKháchHàngToolStripMenuItem_Click);
-
             // 
             // quảnLýNhânViênToolStripMenuItem
             // 
@@ -85,15 +81,14 @@
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
             this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(142, 27);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý nhân viên";
-
             this.quảnLýNhânViênToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNhânViênToolStripMenuItem_Click);
-
             // 
             // frmmainquanlykhachsan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1328, 673);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -103,9 +98,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Quản Lý Khách Sạn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-
             this.Load += new System.EventHandler(this.frmmainquanlykhachsan_Load);
-
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
