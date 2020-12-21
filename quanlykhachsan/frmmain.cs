@@ -51,7 +51,7 @@ namespace quanlykhachsan
         private void Tabphong_Click(object sender, EventArgs e)
         {
             hienthiphong();
-            hienthikhachhang();
+            hienthitraphong();
         }
 
 
@@ -109,7 +109,18 @@ namespace quanlykhachsan
                 trangthai(true);
         }
 
-        private void dtgvThucDon_CellClick(object sender, DataGridViewCellEventArgs e)
+        
+        private void dgkhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = new DataGridViewRow();
+            row = dgkhachhang.Rows[e.RowIndex];
+            txtmakhtp.Text = row.Cells["maKhachHang"].Value.ToString();
+
+        }
+
+       
+
+        private void dtgvTraPhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = new DataGridViewRow();
             row = dgtraphong.Rows[e.RowIndex];
@@ -122,16 +133,6 @@ namespace quanlykhachsan
             txtmathuephong.Text = row.Cells["maThuePhong"].Value.ToString();
             dtngaysinh.Value = Convert.ToDateTime(row.Cells["ngaySinh"].Value.ToString());
             dttpngaybatdauthue.Value = Convert.ToDateTime(row.Cells["ngayDen"].Value.ToString());
-
-        }
-
-
-        private void dgkhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridViewRow row = new DataGridViewRow();
-            row = dgkhachhang.Rows[e.RowIndex];
-            txtmakhtp.Text = row.Cells["maKhachHang"].Value.ToString();
-
         }
 
     
