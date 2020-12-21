@@ -42,6 +42,7 @@ namespace quanlykhachsan
         }
         private void btndangxuat_Click(object sender, EventArgs e)
         {
+           
             frmmainquanlykhachsan.ActiveForm.Close();
             frmdangnhap frm = new frmdangnhap();
             frm.Show();
@@ -86,7 +87,7 @@ namespace quanlykhachsan
             int ngayketthuc = dttpngayketthucthue.Value.Day;
 
             if (ngaybatdau > ngayketthuc)/// vào từ sáng đén tối vẫn tính là 1 ngày
-                MessageBox.Show("nhập sai ngày!! vui long nhập lại", "Thông báo");
+                MessageBox.Show("Nhập sai ngày!! vui lòng nhập lại", "Thông báo");
             else
                 txttongtien.Text = (TongSoNgay * int.Parse(txtdongiatp.Text)).ToString();
         }
@@ -132,5 +133,7 @@ namespace quanlykhachsan
             txtmakhtp.Text = row.Cells["maKhachHang"].Value.ToString();
 
         }
+
+    
     }
 }

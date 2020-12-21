@@ -139,6 +139,7 @@
             this.dgtraphong.Size = new System.Drawing.Size(1261, 246);
             this.dgtraphong.TabIndex = 46;
             this.dgtraphong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvThucDon_CellClick);
+
             // 
             // groupBox8
             // 
