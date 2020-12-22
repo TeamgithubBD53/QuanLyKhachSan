@@ -22,7 +22,14 @@ namespace BLL
         {
             return tpDAL.hienthi_thuetheophong();
         }
-
+        public DataTable hienthi_maphong()
+        {
+            return tpDAL.hienthi_maphong();
+        }
+        public DataTable hienthi_maphongtrong()
+        {
+            return tpDAL.hienthi_maphongtrong();
+        }
         public void tinhtien(DateTime ngayDi, float thanhTien, int maThuePhong, int maPhong)
         {
 

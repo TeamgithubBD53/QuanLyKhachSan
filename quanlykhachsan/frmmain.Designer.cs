@@ -59,6 +59,7 @@
             this.bHuyBo = new System.Windows.Forms.Button();
             this.btThuePhongOK = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dgkhachhang = new System.Windows.Forms.DataGridView();
             this.maKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,10 +76,8 @@
             this.groupBDatPhong = new System.Windows.Forms.GroupBox();
             this.dtngaydattruoc = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtphongdt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBDatPhongTruoc = new System.Windows.Forms.CheckBox();
-            this.txtPhongtp = new System.Windows.Forms.TextBox();
             this.dtTuNgaytp = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -91,6 +90,7 @@
             this.btndangxuat = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Tabphong = new System.Windows.Forms.TabControl();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tpTraPhong.SuspendLayout();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgtraphong)).BeginInit();
@@ -138,7 +138,6 @@
             this.dgtraphong.RowHeadersWidth = 51;
             this.dgtraphong.Size = new System.Drawing.Size(1261, 246);
             this.dgtraphong.TabIndex = 46;
-
             this.dgtraphong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvTraPhong_CellClick);
             // 
             // groupBox8
@@ -439,13 +438,13 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.comboBox1);
             this.groupBox5.Controls.Add(this.dgkhachhang);
             this.groupBox5.Controls.Add(this.label6);
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Controls.Add(this.txtmakhtp);
             this.groupBox5.Controls.Add(this.label4);
             this.groupBox5.Controls.Add(this.groupBDatPhong);
-            this.groupBox5.Controls.Add(this.txtPhongtp);
             this.groupBox5.Controls.Add(this.dtTuNgaytp);
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.label9);
@@ -456,6 +455,14 @@
             this.groupBox5.Size = new System.Drawing.Size(1252, 537);
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(780, 339);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(251, 28);
+            this.comboBox1.TabIndex = 32;
             // 
             // dgkhachhang
             // 
@@ -587,9 +594,9 @@
             // groupBDatPhong
             // 
             this.groupBDatPhong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBDatPhong.Controls.Add(this.comboBox2);
             this.groupBDatPhong.Controls.Add(this.dtngaydattruoc);
             this.groupBDatPhong.Controls.Add(this.label3);
-            this.groupBDatPhong.Controls.Add(this.txtphongdt);
             this.groupBDatPhong.Controls.Add(this.label1);
             this.groupBDatPhong.Controls.Add(this.checkBDatPhongTruoc);
             this.groupBDatPhong.Location = new System.Drawing.Point(152, 393);
@@ -621,15 +628,6 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Từ Ngày :";
             // 
-            // txtphongdt
-            // 
-            this.txtphongdt.Location = new System.Drawing.Point(613, 64);
-            this.txtphongdt.Margin = new System.Windows.Forms.Padding(4);
-            this.txtphongdt.Name = "txtphongdt";
-            this.txtphongdt.Size = new System.Drawing.Size(251, 26);
-            this.txtphongdt.TabIndex = 28;
-            this.txtphongdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -651,15 +649,6 @@
             this.checkBDatPhongTruoc.Text = "Đặt phòng trước :";
             this.checkBDatPhongTruoc.UseVisualStyleBackColor = true;
             this.checkBDatPhongTruoc.CheckedChanged += new System.EventHandler(this.checkBDatPhongTruoc_CheckedChanged);
-            // 
-            // txtPhongtp
-            // 
-            this.txtPhongtp.Location = new System.Drawing.Point(787, 345);
-            this.txtPhongtp.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPhongtp.Name = "txtPhongtp";
-            this.txtPhongtp.Size = new System.Drawing.Size(251, 26);
-            this.txtPhongtp.TabIndex = 22;
-            this.txtPhongtp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // dtTuNgaytp
             // 
@@ -799,6 +788,14 @@
             this.Tabphong.TabIndex = 0;
             this.Tabphong.Click += new System.EventHandler(this.Tabphong_Click);
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(628, 58);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(251, 28);
+            this.comboBox2.TabIndex = 33;
+            // 
             // frmmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -879,10 +876,8 @@
         private System.Windows.Forms.GroupBox groupBDatPhong;
         internal System.Windows.Forms.DateTimePicker dtngaydattruoc;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtphongdt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBDatPhongTruoc;
-        private System.Windows.Forms.TextBox txtPhongtp;
         internal System.Windows.Forms.DateTimePicker dtTuNgaytp;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
@@ -895,5 +890,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiPhong;
         private System.Windows.Forms.DataGridViewTextBoxColumn tinhTrang;
         private System.Windows.Forms.DataGridViewTextBoxColumn donGia;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

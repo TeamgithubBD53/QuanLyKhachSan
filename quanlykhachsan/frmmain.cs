@@ -17,6 +17,8 @@ namespace quanlykhachsan
         public frmmain()
         {
             InitializeComponent();
+            Load_Phong();
+            Load_PhongTrong();
         }
         private void hienthikhachhang()
         {
@@ -60,23 +62,44 @@ namespace quanlykhachsan
         private void btThuePhongOK_Click(object sender, EventArgs e)
         {
             thuephongBLL tpBLL = new thuephongBLL();
-            tpBLL.them_thuephong(int.Parse(txtmakhtp.Text.Trim()), dtTuNgaytp.Value, int.Parse(txtPhongtp.Text.Trim()));
+            tpBLL.them_thuephong(int.Parse(txtmakhtp.Text.Trim()), dtTuNgaytp.Value, int.Parse(comboBox1.Text.Trim()));
             MessageBox.Show("thuê phòng thành công", "Thông báo");
         }
+        public void Load_Phong()
+        {
+            thuephongBLL tpBLL = new thuephongBLL();
 
+            DataTable dt = tpBLL.hienthi_maphong();
+            
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                comboBox2.Items.Add(dt.Rows[i][0]);
+            }
+        }
+        public void Load_PhongTrong()
+        {
+            thuephongBLL tpBLL = new thuephongBLL();
+
+            DataTable dt = tpBLL.hienthi_maphong();
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                comboBox1.Items.Add(dt.Rows[i][0]);
+            }
+        }
         private void bHuyBo_Click(object sender, EventArgs e)
         {
-            txtPhongtp.Clear();
-            txtphongdt.Clear();
+            //comboBox1.Clear();
+            //comboBox2.Clear();
             txtmakhtp.Clear();
         }
 
 
         private void trangthai(bool t)
         {
-            txtPhongtp.Enabled = t;
+            comboBox1.Enabled = t;
             dtTuNgaytp.Enabled = t;
-            txtphongdt.Enabled = !t;
+            comboBox2.Enabled = !t;
             dtngaydattruoc.Enabled = !t;
         }
 

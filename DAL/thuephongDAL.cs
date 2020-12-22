@@ -46,6 +46,36 @@ namespace DAL
             cnn.Close();
             return dt;
         }
+        public DataTable hienthi_maphong()
+        {
+            SqlConnection cnn = ketnoi.Get();
+            // Khai báo và khởi tạo đối tượng Command, truyền vào tên thủ tục tương ứng
+            SqlCommand cmd = new SqlCommand("hienthi_maphong", cnn);
+            // Khai báo kiểu thực thi là Thực thi thủ tục
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cnn.Close();
+            return dt;
+        }
+        public DataTable hienthi_maphongtrong()
+        {
+            SqlConnection cnn = ketnoi.Get();
+            // Khai báo và khởi tạo đối tượng Command, truyền vào tên thủ tục tương ứng
+            SqlCommand cmd = new SqlCommand("hienthi_maphongtrong", cnn);
+            // Khai báo kiểu thực thi là Thực thi thủ tục
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cnn.Close();
+            return dt;
+        }
         public void tinhtien(DateTime ngayDi, float thanhTien, int maThuePhong, int maPhong)
         {
             SqlConnection cnn = ketnoi.Get();

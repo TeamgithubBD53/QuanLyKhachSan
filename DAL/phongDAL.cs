@@ -32,8 +32,9 @@ namespace DAL
             SqlCommand cmd = new SqlCommand("them_phong", cnn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("maPhong", maPhong);
-            cmd.Parameters.AddWithValue("tinhTrang", tinhTrang);
             cmd.Parameters.AddWithValue("loaiPhong", loaiPhong);
+            cmd.Parameters.AddWithValue("tinhTrang", tinhTrang);
+
             cmd.Parameters.AddWithValue("donGia", donGia);
             int i = cmd.ExecuteNonQuery();
             cnn.Close();
@@ -64,8 +65,8 @@ namespace DAL
             SqlCommand cmd = new SqlCommand("sua_phong", cnn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("maPhong", maPhong);
-            cmd.Parameters.AddWithValue("tinhTrang", tinhTrang);
             cmd.Parameters.AddWithValue("loaiPhong", loaiPhong);
+            cmd.Parameters.AddWithValue("tinhTrang", tinhTrang);
             cmd.Parameters.AddWithValue("donGia", donGia);
             int i = cmd.ExecuteNonQuery();
             cnn.Close();
