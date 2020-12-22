@@ -122,8 +122,8 @@ namespace quanlykhachsan
 
         private void dtgvTraPhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = new DataGridViewRow();
-            row = dgtraphong.Rows[e.RowIndex];
+            DataGridViewRow row = new DataGridViewRow(); 
+            row = dgtraphong.Rows[e.RowIndex];           
             txtTPPhong.Text = row.Cells["maPhong"].Value.ToString();
             txtTPTenKH.Text = row.Cells["tenKhachHang"].Value.ToString();
             txtTPSoCMND.Text = row.Cells["chungMinhNhanDan"].Value.ToString();

@@ -61,7 +61,7 @@ namespace DAL
         public void sua_phong(int maPhong, bool tinhTrang, string loaiPhong, int donGia)
         {
             SqlConnection cnn = ketnoi.Get();
-            SqlCommand cmd = new SqlCommand("sua_nhanvien", cnn);
+            SqlCommand cmd = new SqlCommand("sua_phong", cnn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("maPhong", maPhong);
             cmd.Parameters.AddWithValue("tinhTrang", tinhTrang);
