@@ -48,6 +48,8 @@ namespace quanlykhachsan
             frm.Show();
         }
 
+        #region Thuê phòng
+        //Tab Thue phong
         private void Tabphong_Click(object sender, EventArgs e)
         {
             hienthiphong();
@@ -83,13 +85,26 @@ namespace quanlykhachsan
         {
             TimeSpan Time = (dttpngayketthucthue.Value - dttpngaybatdauthue.Value);
             int TongSoNgay = Time.Days + 1;
-            int ngaybatdau = dttpngaybatdauthue.Value.Day;
-            int ngayketthuc = dttpngayketthucthue.Value.Day;
+            //int ngaybatdau = dttpngaybatdauthue.Value.Day;
+            //int ngayketthuc = dttpngayketthucthue.Value.Day;
 
-            if (ngaybatdau > ngayketthuc)/// vào từ sáng đén tối vẫn tính là 1 ngày
+            if(dttpngaybatdauthue.Value.Year > dttpngayketthucthue.Value.Year)
                 MessageBox.Show("Nhập sai ngày!! vui lòng nhập lại", "Thông báo");
-            else
-                txttongtien.Text = (TongSoNgay * int.Parse(txtdongiatp.Text)).ToString();
+            if (dttpngaybatdauthue.Value.Month > dttpngayketthucthue.Value.Month)
+            {
+                if(dttpngaybatdauthue.Value.Year > dttpngayketthucthue.Value.Year)
+                    MessageBox.Show("Nhập sai ngày!! vui lòng nhập lại", "Thông báo");
+            }
+                
+            if (dttpngaybatdauthue.Value.Day > dttpngayketthucthue.Value.Day)/// vào từ sáng đén tối vẫn tính là 1 ngày
+            {
+                if (dttpngaybatdauthue.Value.Month > dttpngayketthucthue.Value.Month)
+                    if (dttpngaybatdauthue.Value.Year > dttpngayketthucthue.Value.Year)
+                        MessageBox.Show("Nhập sai ngày!! vui lòng nhập lại", "Thông báo");
+            }
+                
+            
+            txttongtien.Text = (TongSoNgay * int.Parse(txtdongiatp.Text)).ToString();
         }
 
         private void TPTinhTien_Click(object sender, EventArgs e)
@@ -135,6 +150,6 @@ namespace quanlykhachsan
             dttpngaybatdauthue.Value = Convert.ToDateTime(row.Cells["ngayDen"].Value.ToString());
         }
 
-    
+        #endregion
     }
 }
