@@ -84,9 +84,16 @@ namespace quanlykhachsan
                 hienthi();
             }
         }
-        private bool traveloaiphong()
+        //private bool traveloaiphong()
+        //{
+        //    if (cbloaiphong.Text == "Bận")
+        //        return true;
+        //    else
+        //        return false;
+        //}
+        private bool traveTinhtrang()
         {
-            if (cbloaiphong.Text == "Bận")
+            if (cbtinhtrang.Text == "Bận")
                 return true;
             else
                 return false;
@@ -97,13 +104,13 @@ namespace quanlykhachsan
             if (temp == 1)
             {
                 phongBLL pBLL = new phongBLL();
-                pBLL.them_phong(Convert.ToInt32(txtphong.Text), traveloaiphong(), cbtinhtrang.Text, Convert.ToInt32(txtdongiaphong.Text));
+                pBLL.them_phong(Convert.ToInt32(txtphong.Text),traveTinhtrang(), cbloaiphong.Text, Convert.ToInt32(txtdongiaphong.Text));
                 hienthi();
             }
             else
             {
                 phongBLL pBLL = new phongBLL();
-                pBLL.sua_phong(Convert.ToInt32(txtphong.Text), traveloaiphong(), cbtinhtrang.Text, Convert.ToInt32(txtdongiaphong.Text));
+                pBLL.sua_phong(Convert.ToInt32(txtphong.Text), traveTinhtrang(), cbloaiphong.Text, Convert.ToInt32(txtdongiaphong.Text));
                // nvBLL.sua_phong(txttennv.Text, travegioitinh(), dtngaysinh.Value, txtscm.Text, txtdiachi.Text, txtsdt.Text, dtngayvaolam.Value, int.Parse(txtmanv.Text));
                 hienthi();
             }

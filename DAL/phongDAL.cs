@@ -34,7 +34,6 @@ namespace DAL
             cmd.Parameters.AddWithValue("maPhong", maPhong);
             cmd.Parameters.AddWithValue("loaiPhong", loaiPhong);
             cmd.Parameters.AddWithValue("tinhTrang", tinhTrang);
-
             cmd.Parameters.AddWithValue("donGia", donGia);
             int i = cmd.ExecuteNonQuery();
             cnn.Close();
