@@ -80,7 +80,7 @@ namespace quanlykhachsan
         {
             thuephongBLL tpBLL = new thuephongBLL();
 
-            DataTable dt = tpBLL.hienthi_maphong();
+            DataTable dt = tpBLL.hienthi_maphongtrong();
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
